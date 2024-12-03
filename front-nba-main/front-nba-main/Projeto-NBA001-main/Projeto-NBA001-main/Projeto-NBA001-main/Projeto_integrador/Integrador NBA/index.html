@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto NBA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/logo.jpg" alt="">
+        <div class="retangulo">
+            <h1>Notícias NBA</h1>
+        </div>
+    </header>
+
+    <main class="principal">
+        <div class="img imagem-modal">
+            <img src="./img/image 12.png" alt="">
+            <p class="descricao">Kyrie Irving, um dos melhores jogadores da NBA</p>
+        </div>
+        <div class="img imagem-modal">
+            <img src="./img/Lebrom.png" alt="">
+            <p class="descricao">Bronny James e seu pai LeBron James</p>
+        </div>
+        <div class="img imagem-modal">
+            <img src="./img/draft.png" alt="">
+            <p class="descricao">Primeira escolha Draft NBA 2024</p>
+        </div>
+        <div class="img imagem-modal">
+            <img src="./img/jaja2.png" alt="">
+            <p class="descricao">Ja Morant faz dunk em jogador</p>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comentário</h2>
+            <textarea id="comentario-text" placeholder="Digite seu comentário..."></textarea>
+            
+            
+            <label for="imagem-perfil" id="label-upload-imagem">
+                
+                <span>Adicionar Imagem</span>
+            </label>
+            <input type="file" id="imagem-perfil" style="display: none;" accept="image/*">
+            
+            <button id="enviar-comentario">Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="retanguloB">
+            <h2 class="comentarios">Comentários</h2>
+            <div id="comentarios-list"></div>
+        </div>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
